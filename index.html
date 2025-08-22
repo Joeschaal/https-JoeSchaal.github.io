@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joe — Senior Operations Executive</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header, footer { background: #003366; color: white; text-align: center; padding: 2rem; }
+    section { max-width: 900px; margin: auto; background: white; padding: 2rem; margin-top: 1rem; }
+    h1, h2 { margin-bottom: 0.5rem; }
+    ul { padding-left: 1.2rem; }
+    .button { background: #0055a5; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: 0.3rem; }
+    input, textarea, select { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+    .dashboard { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    .metric { flex: 1; background: #e6f0ff; padding: 1rem; border-radius: 5px; text-align: center; }
+    .timeline { border-left: 3px solid #003366; padding-left: 1rem; margin-top: 1rem; }
+    .event { margin-bottom: 2rem; position: relative; }
+    .event::before {
+      content: "🔹";
+      position: absolute;
+      left: -1.5rem;
+      top: 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joe</h1>
+    <p>Senior Operations Executive | Contact Center Leadership | Process Optimization</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Strategic leader with a proven record of transforming high-volume contact centers and operational teams across regulated industries. I specialize in scalable systems, KPI-driven performance, and cross-functional team empowerment.</p>
+    <a href="resume.pdf" class="button" download>📄 Download My Resume</a>
+  </section>
+
+  <section>
+    <h2>Impact Dashboard</h2>
+    <div class="dashboard">
+      <div class="metric">
+        <h3>📈 25% Cost Reduction</h3>
+        <p>Achieved through centralized operations and process automation.</p>
+      </div>
+      <div class="metric">
+        <h3>📞 1M+ Calls Managed</h3>
+        <p>Led high-volume contact centers exceeding service benchmarks.</p>
+      </div>
+      <div class="metric">
+        <h3>⏱ 40% Faster Turnaround</h3>
+        <p>Streamlined prescription workflows across enterprise systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Career Journey</h2>
+    <div class="timeline">
+      <div class="event">
+        <h3>Director, Student Loan Services (2022–2024)</h3>
+        <p><strong>Led:</strong> Sales & School Servicing Call Centers, Back Office, Financial Reconciliation</p>
+        <p><strong>Impact:</strong> Streamlined operations across multiple functions in a regulated environment</p>
+      </div>
+      <div class="event">
+        <h3>Senior Manager, Healthcare Operations (2019–2022)</h3>
+        <p><strong>Led:</strong> Centralization of prescription refills, prior authorizations, and referrals</p>
+        <p><strong>Impact:</strong> Processed hundreds of thousands of transactions annually</p>
+      </div>
+      <div class="event">
+        <h3>Transformation Lead, Risk Management Contact Centers (2015–2019)</h3>
+        <p><strong>Led:</strong> Performance optimization across Fortune 250 organizations</p>
+        <p><strong>Impact:</strong> Consistently exceeded KPIs in high-volume environments</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="type">Inquiry Type</label>
+        <select id="type" name="type">
+          <option value="job">Job Opportunity</option>
+          <option value="networking">Networking</option>
+          <option value="consulting">Consulting</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Connect with me on LinkedIn | Email: joe@example.com</p>
+  </footer>
+
+</body>
+</html>
